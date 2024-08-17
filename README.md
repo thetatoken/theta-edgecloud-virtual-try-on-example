@@ -30,3 +30,6 @@ You can get it by deploying a Viton model on Theta EdgeCloud [Model Explorer](ht
 <br>
 
 ## Preview
+
+![Screenshot 2024-08-15 at 12 02 39 PM](https://github.com/user-attachments/assets/d82d353f-7bc1-468e-ab74-9ee73f86a623)
+![Screenshot 2024-08-15 at 12 03 07 PM](https://github.com/user-attachments/assets/b0b1000f-9634-4574-903e-a4e808476f98)

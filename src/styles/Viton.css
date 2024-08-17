@@ -1,0 +1,777 @@
+.ShowcaseViton a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+.ShowcaseViton a:hover {
+    color: #535bf2;
+}
+
+.ShowcaseViton {
+    margin-bottom: 3rem;
+}
+
+.ShowcaseViton button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: white;
+    font-size: 14px;
+    background: #3d4463;
+}
+
+.ShowcaseViton button:hover {
+    background: #3d4463e6;
+}
+
+.ShowcaseViton button:focus,
+.ShowcaseViton button:focus-visible {
+}
+
+.ShowcaseViton button:disabled {
+    cursor: not-allowed;
+    border-color: transparent;
+}
+
+.ShowcaseViton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ShowcaseViton__Container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.ShowcaseViton__LeftSide {
+    margin-right: 4rem;
+}
+
+.ShowcaseViton__ImageInputWrapper {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: #191D29;
+    border-radius: 0.8rem;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput__ImageUploaded {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    border-radius: 0;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput__ImageUploaded__Close {
+    background: #3d4463;
+    padding: 0.4rem;
+    top: 0;
+    right: 0;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput__ImageUploaded__Close:hover {
+    background: #2D3443;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput__ImageUploaded__Close .g-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput__ImageUploaded__Close .g-icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput input {
+    height: 20rem;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.ShowcaseViton__ImageInputWrapper .ImageInput__Label {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ShowcaseViton__ImageInputWrapper__input {
+    height: 10rem;
+    flex-grow: 1;
+    padding: 1.8rem;
+    border-radius: 0.6rem;
+    background: transparent;
+    border: 1px solid #3D4463;
+    color: #B0B3B8;
+    font-size: 1.4rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    resize: none;
+}
+
+.ShowcaseViton__ImageInputWrapper__input::placeholder {
+    color: rgba(176, 179, 184, 0.6);
+}
+
+.ShowcaseViton__ImageInputWrapper__input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+
+.ShowcaseViton__Prompts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.55rem;
+    background: #191D29;
+    border-radius: 1rem;
+    padding: 1.7rem 1.5rem;
+}
+
+.ShowcaseViton__Prompts .TextInput input {
+    background: transparent;
+    border: 1px solid #3D4463;
+    border-radius: 0.6rem;
+    color: #B0B3B8;
+    font-size: 1.4rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    width: 97%;
+    resize: none;
+}
+
+.ShowcaseViton__Prompts .TextInput input:focus {
+    outline: none;
+    border-color: cadetblue;
+}
+
+.ShowcaseViton__GeneratedItems {
+    display: flex;
+    gap: 4.3rem;
+    margin-top: 2.6rem;
+}
+
+.ShowcaseViton__GeneratedItemWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 30rem;
+    position: relative;
+}
+
+.ShowcaseViton__GeneratedItemWrapper__LeftBadge {
+    position: absolute;
+    background: #3D4463;
+    color: #B0B3B8;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    left: 2rem;
+    top: 2rem;
+}
+
+.ShowcaseViton .GeneratedItem {
+    background: #191D29;
+    border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.ShowcaseViton .GeneratedItem__Idle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: #3D4463;
+    font-weight: 700;
+}
+
+.ShowcaseViton .GeneratedItem__Idle svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.ShowcaseViton .GeneratedItem__Loading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ShowcaseViton .GeneratedItem__Loading__TopWrapper {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.ShowcaseViton .GeneratedItem__Loading__CenterWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: cadetblue;
+    font-weight: 500;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.ShowcaseViton .GeneratedItem__Loading__BottomWrapper {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #B0B3B8;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.ShowcaseViton .GeneratedItem__Image {
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ShowcaseViton .GeneratedItem__Image img {
+    width: 100%;
+    height: 100%;
+}
+
+.ShowcaseViton .GeneratedItem__DownloadWrapper {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.ShowcaseViton .GeneratedItem__DownloadWrapper svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.ShowcaseViton .GeneratedItem__DownloadWrapper a {
+    color: #3D4463;
+}
+
+.ShowcaseViton__Title {
+    font-weight: 500;
+    color: #B0B3B8;
+    margin-top: 2.2rem;
+}
+
+
+.loader {
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.ShowcaseViton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    color: white;
+}
+
+.ShowcaseViton__Title {
+    font-size: 2.2em;
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.ShowcaseViton__Subtitle {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #636B91;
+    margin: 0 0 2rem;
+}
+
+.ShowcaseViton__container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.ShowcaseViton__LeftSide {
+    border-right: 1px solid #24283B;
+    padding-right: 4rem;
+}
+
+.ShowcaseViton__RightSide {
+    width: 100%;
+}
+
+.ErrorMessage {
+    color: #ff6347;
+    font-weight: 600;
+    height: 2rem;
+    margin: 2.3rem 3rem 3rem 0;
+}
+
+.ShowcaseViton__GeneratedItemName {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #B0B3B8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ResultBox {
+    background: #191D29;
+    border-radius: 1rem;
+    width: 42rem;
+    margin: 3.5rem 4rem 4rem 3.8rem;
+}
+
+.ResultBox__Idle {
+    display: flex;
+    padding: 1.4rem 2rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    color: #3D4463;
+    font-weight: 700; /* Assuming $weight-bold is 700 */
+}
+
+.ResultBox__Idle .g-icon {
+    margin-bottom: 2rem;
+}
+
+.ResultBox__Loading {
+    position: relative;
+    display: flex;
+    padding: 1.4rem 2rem 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+
+.ResultBox__Loading__TopWrapper {
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
+    text-align: center;
+    color: #333333; /* Assuming $color-font-main is #333333 */
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    font-size: 1.2rem;
+}
+
+.ResultBox__Loading__CenterWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #00ff00; /* Assuming $color-green is #00ff00 */
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.ResultBox__Loading__BottomWrapper {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #666666; /* Assuming $color-font-sub is #666666 */
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    font-size: 1.4rem;
+}
+
+.ResultBox__Image {
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ResultBox__Image img {
+    width: 100%;
+    height: 100%;
+}
+
+.ResultBox__Image__DownloadWrapper {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.ResultBox__Image__DownloadWrapper .g-icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.ResultBox__Image__DownloadWrapper .g-icon svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.SidePanel {
+    margin-top: 2rem;
+    width: 71rem;
+    height: fit-content;
+    margin-right: 3.8rem;
+    margin-bottom: 4rem;
+}
+
+.SidePanel__ImageInputs {
+    display: flex;
+    gap: 3.4rem;
+}
+
+.SidePanel__Examples {
+    display: flex;
+    gap: 3.4rem;
+}
+
+.SidePanel__Examples .ShowcaseGallery {
+    width: 50%;
+}
+
+.SidePanel__OutputOptions {
+    display: flex;
+    align-items: center;
+    color: #333333; /* Assuming $color-font-main is #333333 */
+    font-weight: 700; /* Assuming $weight-bold is 700 */
+    cursor: pointer;
+    margin-top: 3.5rem;
+}
+
+.SidePanel__OutputOptions.open .g-icon {
+    transform: rotate(180deg);
+}
+
+.SidePanel__OutputOptions .g-icon {
+    margin-left: 0.7rem;
+    fill: #8A8FB5;
+}
+
+.ShowcaseViton__ActionButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+    margin-top: 2rem;
+}
+
+.ShowcaseViton__ActionButtons button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    flex: 1;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.ShowcaseViton__ActionButtons button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.ShowcaseViton__ActionButtons button {
+    flex: 3;
+}
+
+.SidePanel__GenerateImageLink {
+    font-size: 1.2rem;
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    color: #666666; /* Assuming $color-font-sub is #666666 */
+    text-align: center;
+    margin-top: 1.7rem;
+}
+
+.SidePanel__GenerateImageLink a {
+    text-decoration: underline;
+}
+
+.SidePanel__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.SidePanel__input {
+    height: 10rem;
+    flex-grow: 1;
+    padding: 1.8rem;
+    border-radius: 0.6rem;
+    background: transparent;
+    border: 1px solid #3D4463;
+    color: #666666; /* Assuming $color-font-sub is #666666 */
+    font-size: 1.4rem;
+    font-family: "Gilroy", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    margin-bottom: 1.75rem;
+    resize: none;
+}
+
+.SidePanel__input::placeholder {
+    color: rgba(102, 102, 102, 0.6); /* Assuming $color-font-sub is #666666 */
+}
+
+.SidePanel__input:focus {
+    outline: none;
+    border-color: rgba(0, 255, 0, 0.6); /* Assuming $color-green is #00ff00 */
+}
+
+.VideosWrapper {
+    width: 100%;
+}
+
+.PromptContainerRoot {
+    padding-top: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.PromptContainer {
+    margin-top: 3rem;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    width: 47rem;
+    max-width: 100%;
+    line-height: 1.68rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-end;
+    background: #333333; /* Assuming $color-dark-grey is #333333 */
+    color: #00ff00; /* Assuming $color-green is #00ff00 */
+    margin-bottom: 2rem;
+}
+
+.PromptContainer__Visible {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.PromptContainer__Left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.PromptContainer__Right {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.PromptContainer__Right img {
+    height: 7.5rem;
+    border-radius: 1rem;
+}
+
+.PromptContainer__PromptLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700; /* Assuming $weight-bold is 700 */
+    color: #333333; /* Assuming $color-font-main is #333333 */
+    margin-bottom: 1.2rem;
+}
+
+.PromptContainer__BottomWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PromptContainer__ParamsButton.open .g-icon {
+    transform: rotate(180deg);
+}
+
+.PromptContainer__ParamsButton .g-icon {
+    margin-left: 0.7rem;
+    fill: #8A8FB5;
+}
+
+.PromptContainer__Params pre {
+    font-size: 1.4rem;
+    font-weight: 500; /* Assuming $weight-medium is 500 */
+    color: #666666; /* Assuming $color-font-sub is #666666 */
+    margin-top: 1.2rem;
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    /* Assuming breakpoint('mobile') is max-width: 768px */
+    .ShowcaseViton__container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .ShowcaseViton__LeftSide {
+        margin-bottom: 0;
+        margin-top: 0;
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ShowcaseViton__RightSide {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .VideosWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ShowcaseViton__Title {
+        align-self: flex-start;
+        margin-top: 2rem;
+        margin-bottom: -1rem;
+    }
+
+    .SidePanel {
+        margin-right: 0;
+        width: 100%;
+        max-width: 55rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .SidePanel__ActionButtons .Button--medium {
+        max-width: 50%;
+        min-width: auto;
+    }
+
+    .SidePanel__ImageInputs {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .SidePanel__ImageInputs .ImageInput {
+        width: 100%;
+    }
+
+    .SidePanel__ImageInputs .ImageInput input {
+        width: 100%;
+    }
+
+    .ResultBox {
+        margin: 2rem 0 0;
+        width: 100%;
+        max-width: 42rem;
+    }
+
+    .ResultBox__Image img {
+        max-width: 42rem;
+    }
+
+    .UserMessageContainer .UserMessage {
+        width: 100%;
+        max-width: 55rem;
+    }
+
+    .PromptContainerRoot .PromptContainer {
+        width: 100%;
+    }
+
+    .MessagesWrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+}
+
+.ShowcaseGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -3rem;
+
+
+}
+
+.ShowcaseGallery__Images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.ShowcaseGallery__Image {
+    object-fit: cover;
+    border-radius: 0.8rem;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.ShowcaseGallery__Image img {
+    width: 100%;
+    height: 100%;
+    max-height: 5rem;
+    max-width: 5rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.ShowcaseGallery__Image:hover {
+    transform: scale(1.05);
+}

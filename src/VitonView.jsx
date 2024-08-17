@@ -3,7 +3,6 @@ import {ImageInput} from "./components/ImageInput.jsx";
 import {generateViton, stopVitonGeneration} from "./VitonAPI.js";
 import './styles/Viton.css'
 import {BiImage} from "react-icons/bi";
-import {LoadingItem} from "./components/LoadingItem.jsx";
 
 export const VitonView = ({images}) => {
     const [isLoading, setLoading] = useState(false);
@@ -140,7 +139,7 @@ export const VitonView = ({images}) => {
                             {images.map((image, index) => (
                                 <div key={index} className={"ShowcaseGallery__Image"}
                                      onClick={() => setCurrentGarmentUrl(image)}>
-                                    <img src={image} />
+                                    <img src={image}/>
                                 </div>
                             ))}
                         </div>
@@ -155,7 +154,7 @@ export const VitonView = ({images}) => {
                     <div className="ShowcaseViton__GeneratedItemWrapper">
                         {isLoading && <div className={"GeneratedItem"}>
                             <div className={"GeneratedItem__Idle"}>
-                                <LoadingItem/>
+                                <div className={"loader"}/>
                             </div>
                         </div>}
 
